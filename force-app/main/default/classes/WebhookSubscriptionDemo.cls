@@ -4,12 +4,6 @@
  * Date : Feb 2, 2022
  */
 
-/*public with sharing class WebhookSubscriptionDemo {
-    public WebhookSubscriptionDemo() {
-
-    }
-}*/
-
 @RestResource(urlMapping='/api/Webhooks/pushDetailsdemo/*')
 global with sharing class WebhookSubscriptionDemo {
     @HttpPost
@@ -19,9 +13,9 @@ global with sharing class WebhookSubscriptionDemo {
             RestResponse response = RestContext.response;
         } catch (Exception e) {
             system.debug('Exception Happened----' + e.getMessage());
+            System.debug('===testing=====');
         }
     }
 }
 
-//https://sundardemo-developer-edition.ap15.force.com/webhookdemo/api/Webhooks/pushDetailsdemo
-//
+//https://sundardemo-developer-edition.ap15.force.com/services/apexrest/api/Webhooks/pushDetailsdemo
